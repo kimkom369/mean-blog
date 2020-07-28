@@ -1,0 +1,29 @@
+*{
+  text-align: center;
+  background: #00000033;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+p{
+
+
+
+
+}
+
+@media (max-width: 360px) {
+  p{
+    font-size: 20px;
+  }
+}
+@media(max-width: 414px){
+
+  *{
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+  }
+}

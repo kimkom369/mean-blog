@@ -1,0 +1,280 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+
+.info-text{
+  text-align: center;
+}
+
+mat-expansion-panel{
+  position: relative;
+  bottom: 200px;
+  background: linear-gradient(35deg, #12d49a 0%, #2763e6 100%);
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+mat-spinner{
+  margin: auto;
+
+}
+
+mat-paginator{
+  background: #eeffff00;
+  display: inline-flex;
+  position: relative;
+  bottom: 180px;
+}
+
+p{
+  color: black;
+}
+
+.title{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+ .post-image{
+ width: 100%;
+}
+
+.post-image img{
+  width: 100%;
+  box-shadow: 1px 2px 7px black;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+
+}
+
+.waves {
+  position:relative;
+  width: 120%;
+  height:60vh;
+  margin-bottom:-20px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:200px;
+}
+
+
+
+.header {
+  position: relative;
+  right: 20%;
+  text-align:center;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  width: 132.5%;
+  color:white;
+  overflow-x: hidden;
+}
+
+.inner-header {
+  height:30vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+/* shrinking for macbook */
+@media (max-width: 2560px){
+
+  mat-accordion{
+    position: relative;
+    top: 30px;
+  }
+
+  mat-expansion-panel {
+    max-width: 50%;
+    margin-top: 5px;
+  }
+
+  .post-image{
+    width: 100%;
+    max-height: 100%;
+
+  }
+  .post-image img{
+    width: 700px;
+    height: 400px;
+
+  }
+
+  .inner-header{
+    height: 250px;
+    margin-top: 0;
+  }
+  .waves {
+    position:relative;
+    width: 120%;
+    height:20vh;
+    margin-bottom: -10px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:200px;
+  }
+
+}
+
+@media (max-width: 360px){
+
+  mat-accordion{
+    position: relative;
+    top: 30px;
+  }
+
+  mat-expansion-panel{
+    max-width: 80%;
+    text-align: center;
+
+  }
+
+  .title{
+    font-size: 13px;
+    color: black;
+    text-transform: capitalize;
+    text-shadow: 1px  black;
+  }
+
+}
+
+/***    IPHONES + GALAXT NOTE      ***/
+@media (max-width: 414px){
+
+  *{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  mat-spinner{
+    position: relative;
+    left: 50px;
+
+  }
+
+  mat-accordion{
+    position: relative;
+    top: -150px;
+  }
+
+  mat-paginator{
+    background: #eeffff00;
+    display: inline-flex;
+    position: relative;
+    bottom: 350px;
+    left: 50px;
+    padding: 0;
+  }
+  .waves {
+    height:40px;
+    min-height:40px;
+    padding: 0;
+
+  }
+ .header{
+   max-width: 120%;
+   max-width: 120%;
+   overflow: hidden;
+   padding: 0;
+   margin: 0;
+
+ }
+ .inner-header{
+   height: 400px;
+   overflow: hidden;
+   margin: 0;
+   padding: 0;
+ }
+ .post-content{
+   text-align: center;
+ }
+
+  mat-expansion-panel{
+    text-align: center;
+    max-width: 70%;
+    width: 350px;
+    position: relative;
+    left: 50px;
+    padding: 0;
+  }
+
+  p{
+    position: relative;
+    left: 45px;
+    padding: 0;
+  }
+
+  .post-image{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .post-image img{
+    width: 100%;
+    height: 50%;
+  }
+
+
+  .footer{
+    background: rgba(0, 0, 0, 0.308);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 0;
+
+  }
+}

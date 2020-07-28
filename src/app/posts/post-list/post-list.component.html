@@ -1,0 +1,41 @@
+ <div class="header">
+  <div class="inner-header flex">
+  </div>
+  <mat-paginator color="accent" [length]="totalPosts" [pageSize]="postsPerPage" [pageSizeOptions]="pageSizeOptions"
+  (page)="onChangedPage($event)" *ngIf="posts.length > 0">
+  </mat-paginator>
+  <mat-spinner *ngIf="isLoading" color="accent"></mat-spinner>
+  <mat-accordion multi="true" *ngIf="posts.length > 0 && !isLoading" class="">
+    <mat-expansion-panel *ngFor="let post of posts">
+      <mat-expansion-panel-header>
+        <p class="title">{{post.title}}</p>
+      </mat-expansion-panel-header>
+      <div class="post-image">
+        <img [src]="post.imagePath" [alt]="post.title">
+      </div>
+     <p class="post-content">{{post.content}}</p>
+     <mat-action-row *ngIf="userIsAuthenticated &&  userId == post.creator">
+       <a mat-stroked-button color="accent" [routerLink]="['/edit', post.id]">EDIT</a>
+       <button mat-stroked-button color="warn" (click)="onDelete(post.id)">DELETE</button>
+     </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <p class="info-text mat-body-1" *ngIf="posts.length <= 0">No posts available</p>
+
+  <!--Waves Container-->
+  <div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+  </g>
+  </svg>
+  </div>
+

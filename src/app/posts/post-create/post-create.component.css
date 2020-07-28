@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+
+
+*{
+  color: black;
+}
+mat-card{
+  background:#23ffab;
+  margin-top: 20px;
+  max-width: 70%;
+  position: relative;
+  left: 150px;
+
+}
+
+button{
+  margin-top: 15px;
+
+}
+button:hover{
+  background-color: rgb(63, 63, 63);
+  color: #23ffab;
+}
+
+mat-form-field{
+  display: block;
+}
+
+mat-spinner{
+  margin: auto;
+  color: "white";
+}
+
+input[type="file"]{
+  visibility: hidden;
+}
+
+.imgload{
+  display: inline;
+  margin-left: 100px;
+}
+
+.image-preview{
+  height: 5rem;
+  margin: 1rem 0;
+}
+.image-preview img{
+  height: 100%;
+}
+
+h1 {
+  color: rgba(0,0,0,.2);
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.096) 2px 3px 5px;
+  font-size: 80px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+@media (max-width: 414px){
+
+  h1 {
+    color: rgba(0,0,0,.2);
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-shadow: rgba(0, 0, 0, 0.096) 2px 3px 5px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  mat-card{
+   height: 400px;
+   max-width: 80%;
+   position: relative;
+   left: 30px;
+
+
+  }
+  mat-form-field, input{
+    max-width: 100%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  }
+  mat-form-field, textarea{
+    position: relative;
+    margin-top: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  mat-form-field{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: black;
+  }
+}

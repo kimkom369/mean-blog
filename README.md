@@ -1,4 +1,12 @@
-# MeanCourse
+# MeanStack PROJECT Sitrep-app    !!!!!  ====>>>> you will also need to create your very own nodemon.json file <<<<====== !!!!
+
+nodemon.json file EXAMPLE: ==> 
+{
+"env": {
+   "DB_WHATEVER_PASSWORD": "YOURPASSWORD",
+   "JWT_KEY": "secret_this_should_be_longer"
+  }
+}
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 

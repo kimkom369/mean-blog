@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+
+h1{
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgb(37, 218, 178), rgb(19, 77, 238));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(10, 238, 181);
+}
+
+.login{
+  margin-right: 40px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  display: flex;
+}
+.space{
+  margin-left: 70px;
+}
+
+.spacer{
+  flex: 1 1 auto ;
+}
+
+@media (max-width: 360px){
+  mat-toolbar{
+    max-width: 100%;
+  }
+
+  h1{
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient( rgb(51, 119, 196), rgb(75, 233, 212));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: 'Montserrat Subrayada', sans-serif;
+  }
+
+}
+
+@media (max-width: 414px){
+
+
+  h1{
+    color: rgba(0,0,0,.2);
+    font-size: 24px;
+    letter-spacing: 1px;
+    background: -webkit-linear-gradient( rgb(51, 119, 196), rgb(75, 233, 212));
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .space {
+    margin: 0;
+  }
+
+
+
+  button{
+    width: 12px;
+    font-size: 8px;
+  }
+
+
+
+  .postcreate{
+    margin-right: 20px;
+  }
+
+
+}

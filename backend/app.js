@@ -51,4 +51,4 @@ app.use('/api/user', userRoutes)
 
 module.exports = app
 
-//mongodb+srv://kimkom:yqg1xA5PcHZnG5im@cluster0-yyp8l.mongodb.net/test
+

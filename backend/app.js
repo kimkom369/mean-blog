@@ -17,9 +17,9 @@ mongoose.set('useCreateIndex', true)
 
 mongoose
   .connect(
-    "mongodb+srv://kimkom:" +
+    "mongodb+srv://<USERNAME>" +
     process.env.MONGO_ATLAS_PW +
-    "@cluster0-yyp8l.mongodb.net/node-angular?retryWrites=true&w=majority",
+    "@cluster0-yyp8l.mongodb.net/<DB:NAME>?retryWrites=true&w=majority",
  {useNewUrlParser: true, useUnifiedTopology: true})
   .then(() => {
     console.log("Connected to database!");

@@ -26,8 +26,8 @@ export class PostCreateComponent implements OnInit , OnDestroy {
   private authStatusSub: Subscription;
 
   constructor(
-    public postService: PostService,
-    public route: ActivatedRoute,
+    private postService: PostService,
+    private route: ActivatedRoute,
     private authService: AuthService
   ) {}
 
